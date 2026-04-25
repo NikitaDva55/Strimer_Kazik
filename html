@@ -1,0 +1,52 @@
+<div id="app">
+  <div class="top-bar">
+    <div id="profile-trigger" class="profile-icon">👤</div>
+    <div class="balance-display">Balance: $<span id="money">200</span></div>
+  </div>
+
+  <div class="main-container">
+    <h1 class="game-title">STREAMER BATTLE</h1>
+
+    <div class="promo-box">
+      <input type="text" id="promo-input" placeholder="ENTER CODE (STINT)">
+      <button id="promo-btn">APPLY</button>
+      <div id="promo-status"></div>
+    </div>
+
+    <div class="roulette-wrapper">
+      <div class="selector"></div>
+      <div id="roulette-strip" class="strip"></div>
+    </div>
+    
+    <button id="open-btn">OPEN CASE ($100)</button>
+
+    <div class="inventory-section">
+      <h3>INVENTORY</h3>
+      <div id="inventory" class="inventory-grid"></div>
+    </div>
+  </div>
+
+  <div id="profile-overlay" class="full-overlay">
+    <div class="profile-box">
+      <button class="close-btn" id="close-profile">×</button>
+      <div class="big-avatar">👤</div>
+      <h2>Profile</h2>
+      <p>Followers: <span id="total-followers">0</span></p>
+      <div class="fav-status-box">Favorite: <span id="fav-display">None</span></div>
+    </div>
+  </div>
+
+  <div id="drop-overlay" class="full-overlay">
+    <div class="drop-layout">
+      <div class="drop-left">
+        <img id="drop-img" src="">
+      </div>
+      <div class="drop-right">
+        <h1 id="drop-name-big"></h1>
+        <h2 id="rarity-text"></h2>
+        <h3 id="follower-gain"></h3>
+      </div>
+    </div>
+    <p class="collect-hint">Click anywhere to collect</p>
+  </div>
+</div>
