@@ -1,0 +1,41 @@
+body { background-color: #0a0a0a; color: white; font-family: 'Arial Black', sans-serif; margin: 0; }
+.top-bar { display: flex; justify-content: space-between; padding: 15px; background: #111; border-bottom: 2px solid #222; }
+.profile-icon { width: 50px; height: 50px; background: #333; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; border: 2px solid #444; }
+
+.promo-box { background: #1a1a1a; padding: 15px; border-radius: 12px; display: inline-block; margin-bottom: 10px; border: 1px solid #333; }
+#promo-input { background: #000; border: 1px solid #444; color: #0f0; padding: 10px; border-radius: 5px; outline: none; width: 180px; text-align: center; }
+#promo-btn { background: #2ecc71; border: none; padding: 10px 15px; color: white; border-radius: 5px; cursor: pointer; font-weight: bold; }
+#promo-status { font-size: 12px; margin-top: 8px; height: 14px; font-weight: bold; }
+
+.main-container { max-width: 800px; margin: 0 auto; padding: 20px; text-align: center; }
+.roulette-wrapper { position: relative; width: 100%; height: 150px; background: #111; margin: 20px 0; border: 4px solid #222; overflow: hidden; border-radius: 15px; }
+.selector { position: absolute; left: 50%; transform: translateX(-50%); width: 4px; height: 100%; background: #ff4757; z-index: 10; box-shadow: 0 0 15px #ff4757; }
+.strip { display: flex; position: absolute; top: 10px; transition: transform 4s cubic-bezier(0.1, 0, 0.1, 1); }
+
+.item { min-width: 130px; width: 130px; height: 130px; margin: 0 5px; background: #222; border-radius: 10px; overflow: hidden; }
+.item img { width: 100%; height: 100%; object-fit: cover; }
+
+.full-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.98); display: none; justify-content: center; align-items: center; z-index: 1000; cursor: pointer; }
+.profile-box { background: #1a1a1a; padding: 30px; border-radius: 20px; width: 280px; text-align: center; cursor: default; }
+.drop-layout { display: flex; align-items: center; gap: 40px; }
+.drop-left img { width: 300px; height: 300px; border-radius: 20px; border: 8px solid white; object-fit: cover; }
+
+#drop-name-big { font-size: 60px; margin: 0; text-transform: uppercase; }
+#follower-gain { color: #2ecc71; font-size: 30px; }
+
+.text-RARE { color: #2ecc71; }
+.text-SUPER-RARE { color: #3498db; }
+.text-EPIC { color: #9c88ff; }
+.text-MYTHIC { color: #e84118; }
+.text-LEGENDARY { color: #fbc531; }
+.text-ULTRA-LEGENDARY { background: linear-gradient(to right, #ff00ff, #00ffff, #fff, #ff00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-size: 200% auto; animation: rb-text 2s linear infinite; }
+@keyframes rb-text { to { background-position: 200% center; } }
+
+#open-btn { width: 100%; padding: 20px; background: linear-gradient(180deg, #ff4757, #e84118); border: none; border-radius: 10px; color: white; font-size: 22px; cursor: pointer; font-weight: bold; }
+#open-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.inventory-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 10px; margin-top: 20px; }
+.inv-card { background: #1a1a1a; padding: 8px; border-radius: 10px; position: relative; text-align: center; cursor: pointer; }
+.inv-card img { width: 100%; height: 90px; object-fit: cover; border-radius: 5px; }
+.fav-star { position: absolute; top: 5px; right: 5px; background: rgba(0,0,0,0.7); border: none; color: white; border-radius: 50%; cursor: pointer; }
+.fav-star.active { color: gold; }
